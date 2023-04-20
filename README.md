@@ -4,7 +4,7 @@
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(8,9,4,5,6,7);
 SoftwareSerial Gsm(2, 3);
-char phone_no[] = "+918431780308"; //replace with phone no. to get sms
+char phone_no[] = "+91XXXXXXXXX; //replace x with phone no. to get sms
 
 TinyGPS gps;  //Creates a new instance of the TinyGPS object
 int state; 
@@ -41,7 +41,7 @@ lcd.begin (16, 2);
 void loop()
 {
    lcd.clear();
-     lcd.print("Soldier Tracking");
+     lcd.print("Vehicle  Tracking");
      lcd.setCursor(0,1);
      lcd.print("System...!!"); 
      delay(100);
@@ -100,7 +100,7 @@ int ldrStatus = analogRead(ldrPin);// Storing value in Degree Celsius
      lcd.print("To Base....");
      delay(3000);
     
-    Gsm.println("Asheesh ,Battalion No. 1233456 ");
+    Gsm.println("Srushti ,Battalion No. 1233456 ");
      Gsm.print("Temperature is  ");
       Gsm.println(tempc);
 
@@ -141,7 +141,7 @@ int ldrStatus = analogRead(ldrPin);// Storing value in Degree Celsius
      lcd.print("To Base....");
      delay(3000);
     
-    Gsm.println("Hai muni how are you im in trouble please help me please ");
+    Gsm.println("Heyya , friend I need help ");
      Gsm.print("Temperature is  ");
       Gsm.println(tempc);
 
@@ -168,7 +168,7 @@ Gsm.print("Heartbeat is  ");
     else{
    
      lcd.clear();
-     lcd.print("Soldier Tracking");
+     lcd.print("Vehicle Tracking");
      lcd.setCursor(0,1);
      lcd.print("System "); 
      delay(10);
